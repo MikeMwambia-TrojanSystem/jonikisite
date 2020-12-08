@@ -37,7 +37,7 @@ if(app.get('env') === 'production'){
 
 //HomePage
 app.get('/', (req, res) =>{
-	res.sendFile(path.join(__dirname,'public/index.html'))
+	res.sendFile('public/index.html')
 });
 
 app.listen(port,() => console.log('Joniki website on port 3k'+port));
